@@ -25,7 +25,11 @@ curl https://raw.githubusercontent.com/EZRAIDv2/fedora-grabber/main/src/fedora-g
 ```
 Перед прописыванием следующей команды отредактируйте файл так, чтобы в начале было написан URL вебхука.
 
-Пример: ``
+Пример:
+```text
+#!/usr/bin/python3
+WEBHOOK_URL = 'Тут будет вебхук URL'
+```
 
 Теперь идём дальше.
 ```bash
